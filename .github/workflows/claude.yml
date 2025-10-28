@@ -40,6 +40,13 @@ jobs:
           additional_permissions: |
             actions: read
 
+          direct_prompt: |
+            このPRをレビューしてください。
+
+            - レビュー観点は @doc/REVIEW_GUDELINE.md にあります。これを参考にして、絶対に抜け漏れがないように ultrathink して考えてください。
+            - 改善点や懸念事項があるコードの行には mcp__github_inline_comment__create_inline_comment を使ってコメントを追加してください。
+            - 常に日本語で返信してください。
+
           # Optional: Give a custom prompt to Claude. If this is not specified, Claude will perform the instructions specified in the comment that tagged it.
           # prompt: 'Update the pull request description to include a summary of changes.'
 
